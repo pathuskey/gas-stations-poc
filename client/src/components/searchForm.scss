@@ -1,0 +1,36 @@
+@import "../scss/variables.scss";
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  max-width: 20rem;
+  margin: 0 auto;
+
+  &__group {
+    width: 50%;
+  }
+
+  &__btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  @include media-breakpoint-up(sm) {
+    max-width: none;
+
+    &__group,
+    &__btn {
+      width: auto;
+    }
+
+    &__group {
+      &.form-group {
+        margin-bottom: 0;
+        width: 10rem;
+      }
+    }
+  }
+}

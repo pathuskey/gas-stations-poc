@@ -1,0 +1,7 @@
+@import "../scss/variables";
+@import "~leaflet/dist/leaflet.css";
+
+.map {
+  height: 350px;
+  max-height: 50vh;
+}
