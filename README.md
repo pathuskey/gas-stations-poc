@@ -1,23 +1,23 @@
 # Gas Station POC
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+These instructions assume that Docker is installed on the system.
 
-### `yarn start`
+1. Start the web server.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   ```bash
+   cd server
+   docker build -t <username>/gas-station-server .
+   docker run -it -p 8080:8080 <username>/gas-station-server
+   ```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+2. Start the client app.
 
-### `yarn test`
+   ```bash
+   cd client
+   docker build -t <username>/gas-station-client .
+   docker run -it -p 3000:3000 <username>/gas-station-client
+   ```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Open a browser and navigate to [http://localhost:3000](http://localhost:3000).

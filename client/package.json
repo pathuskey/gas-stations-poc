@@ -45,6 +45,5 @@
   },
   "devDependencies": {
     "@types/reactstrap": "^8.4.2"
-  },
-  "proxy": "http://local.walmart.com"
+  }
 }

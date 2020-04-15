@@ -2,7 +2,7 @@ const express = require("express")
 const fetch = require("node-fetch")
 const cors = require("cors")
 
-const apiPort = 4000
+const apiPort = 8080
 const app = express()
 
 app.use(cors())
