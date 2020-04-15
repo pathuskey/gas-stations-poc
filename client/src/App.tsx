@@ -51,6 +51,7 @@ const App = () => {
         setGasStations(null)
       } finally {
         setIsSearching(false)
+        setSelectedStation(null)
       }
     }
 
