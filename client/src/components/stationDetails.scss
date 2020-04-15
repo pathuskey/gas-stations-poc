@@ -1,0 +1,9 @@
+@import "../scss/variables";
+@import "~leaflet/dist/leaflet.css";
+
+.station-details {
+  &__card {
+    z-index: 1000;
+    margin-top: -5rem;
+  }
+}
